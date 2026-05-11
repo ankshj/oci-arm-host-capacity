@@ -1,6 +1,7 @@
 name: Tests
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -9,7 +10,7 @@ on:
       - main
 
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/20 * * * *'
 
 jobs:
   tests:
